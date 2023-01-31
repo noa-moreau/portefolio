@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function getValue(event) {
+            // Sélectionner l'élément input et récupérer sa valeur
+            let key = event.code;
+            if (key == "Enter"){
+                var input = document.getElementsByClassName("input")[0].value;
+                // Afficher la valeur
+                if (input == "cd .."){
+                    window.location.href ="index.html";
+                }
+            }   
+        }
+    </script>
+</head>
+<body>
+    <div class="test">
+        <div class="test3">
+
+            <p class="blanc">noa@debian:/presentation/test</p>
+        
+            <span class="dot">
+                <span class="dotRed"></span>
+                <span class="dotOrange"></span>
+                <span class="dotGreen"></span>
+            </span>
+        </div>
+        <div class="test4">
+            <p class="blanc"> File Edit View Search Terminal Help</p>
+        </div>
+    </div>
+    <div class="test1">
+        <div class="test2">
+            <p class="vert">noa@debian</p>
+            <p class="blanc">:</p>
+            <p class="bleu">/presentation/test</p>
+            <p class="blanc">$</p>
+            <p class="blanc"><blink>| </blink></p>
+            <input type="text" name="input" class="input" onkeypress="getValue(event);">
+            
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>
