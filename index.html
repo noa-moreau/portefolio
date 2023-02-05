@@ -4,14 +4,15 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
     <script>
-        if (navigator.userAgent.match(/Android/i)){
+        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i)){
             window.location.href ="mobile.html";
         }
     </script>
 </head>
 <body>
-    <a href="./terminal.html"> <button><img height="40px" width="40px" src="./terminal.png"> </button> </a>
-    <a href=""> <button><img height="40px" width="40px" src="./dossier.png"> </button> </a>
+    <a href="./terminal.html"> <button><img height="40px" width="40px" src="./terminal.png"> </button> <p>Terminal</p></a>
+
+    <a href=""> <button><img height="40px" width="40px" src="./dossier.png"> </button> <p>Documents</p> </a>
 </body>
 </body>
 </html>
