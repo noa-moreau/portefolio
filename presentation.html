@@ -10,14 +10,11 @@
             if (key == "Enter"){
                 var input = document.getElementsByClassName("input")[0].value;
                 // Afficher la valeur
-                if (input == "cd projets"){
-                    window.location.href ="projets.html";
-                }
-                else if (input == "cd presentation"){
-                    window.location.href ="presentation.html";
-                } 
-                else if (input == "cd ."){
+                if (input == "cd .."){
                     window.location.href ="index.html";
+                }
+                else if (input == "cd ."){
+                    window.location.href ="presentation.html";
                 } 
                 else if (input == "ls"){
                     var div = document.getElementsByClassName('test2')[0];
@@ -31,13 +28,14 @@
 </head>
 <body>
     <div class="test">
-       <span class="dot">
+        <span class="dot">
                 <span class="dotRed"></span>
                 <span class="dotOrange"></span>
                 <span class="dotGreen"></span>
-        </span> 
+        </span>
         <div class="test3">
-            <p class="blanc">noa@debian:/</p>
+            <p class="blanc">noa@debian:/presentation</p>
+        
         </div>
         <div class="test4">
             <p class="blanc"> File Edit View Search Terminal Help</p>
@@ -49,18 +47,18 @@
             <div class="baba">
                 <p class="vert">noa@debian</p>
                 <p class="blanc">:</p>
-                <p class="bleu">/</p>
+                <p class="bleu">/presentation</p>
                 <p class="blanc">$</p>
                 <p class="blanc">ls </p>
             </div> 
-            <p class="blanc_"><strong> . projets presentation</strong></p>
+            <p class="blanc_"><strong> . .. </strong></p>
         </div>
 
 
         <div class="test2">
             <p class="vert">noa@debian</p>
             <p class="blanc">:</p>
-            <p class="bleu">/</p>
+            <p class="bleu">/presentation</p>
             <p class="blanc">$</p>
             <p class="blanc"><blink>| </blink></p>
             <input type="text" name="input" class="input" onkeypress="getValue(event);">

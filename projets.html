@@ -13,31 +13,52 @@
                 if (input == "cd .."){
                     window.location.href ="index.html";
                 }
+                else if (input == "cd ."){
+                    window.location.href ="projets.html";
+                }
+
+                else if (input == "ls"){
+                    var div = document.getElementsByClassName('test2')[0];
+                    var div_bis = document.getElementsByClassName('test2_')[0];
+                    div.style.display = "none";
+                    div_bis.style.display = "flex";
+                }
             }   
         }
     </script>
 </head>
 <body>
     <div class="test">
-        <div class="test3">
-
-            <p class="blanc">noa@debian:/presentation/projects</p>
-        
-            <span class="dot">
+        <span class="dot">
                 <span class="dotRed"></span>
                 <span class="dotOrange"></span>
                 <span class="dotGreen"></span>
-            </span>
+        </span>
+        <div class="test3">
+
+            <p class="blanc">noa@debian:/projets</p>
+        
         </div>
         <div class="test4">
             <p class="blanc"> File Edit View Search Terminal Help</p>
         </div>
     </div>
     <div class="test1">
+        <div class="test2_">
+            <div class="baba">
+                <p class="vert">noa@debian</p>
+                <p class="blanc">:</p>
+                <p class="bleu">/projets</p>
+                <p class="blanc">$</p>
+                <p class="blanc">ls </p>
+            </div> 
+            <p class="blanc_">.. .</p>
+        </div>
+
         <div class="test2">
             <p class="vert">noa@debian</p>
             <p class="blanc">:</p>
-            <p class="bleu">/presentation/test</p>
+            <p class="bleu">/projets</p>
             <p class="blanc">$</p>
             <p class="blanc"><blink>| </blink></p>
             <input type="text" name="input" class="input" onkeypress="getValue(event);">

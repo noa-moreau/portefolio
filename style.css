@@ -20,6 +20,12 @@ blink {
 }
 
 .blanc {
+    .
+    color: rgb(240,240,240)
+}
+
+.blanc_ {
+    display: block flow;
     color: rgb(240,240,240)
 }
 
@@ -31,9 +37,11 @@ blink {
 }
 
 .test3 {
+    text-align: center;
 }
 
 .dot {
+    float: right;
 }
 
 .test3 , p {
@@ -42,6 +50,10 @@ blink {
 }
 
 .test4{  
+}
+
+.baba{
+    display: flex;
 }
 
 .test1 {
@@ -53,6 +65,15 @@ blink {
 
 .test2{
     display: flex;
+}
+
+.test2_{
+    display: none;
+    flex-direction: column;
+}
+.help{
+    display: none;
+    flex-direction: column;
 }
 
 .input {
