@@ -4,73 +4,14 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
     <script>
-        function getValue(event) {
-            // Sélectionner l'élément input et récupérer sa valeur
-            let key = event.code;
-            if (key == "Enter"){
-                var input = document.getElementsByClassName("input")[0].value;
-                // Afficher la valeur
-                if (input == "cd projets"){
-                    window.location.href ="projets.html";
-                }
-                else if (input == "cd presentation"){
-                    window.location.href ="presentation.html";
-                } 
-                else if (input == "cd ."){
-                    window.location.href ="index.html";
-                } 
-                else if (input == "ls"){
-                    var div = document.getElementsByClassName('test2')[0];
-                    var div_bis = document.getElementsByClassName('test2_')[0];
-                    div.style.display = "flex";
-                    div_bis.style.display = "flex";
-                }             
-            }   
+        if (navigator.userAgent.match(/Android/i)){
+            window.location.href ="projets.html";
         }
     </script>
 </head>
 <body>
-    <div class="test">
-       <span class="dot">
-                <span class="dotRed"></span>
-                <span class="dotOrange"></span>
-                <span class="dotGreen"></span>
-        </span> 
-        <div class="test3">
-            <p class="blanc">noa@debian:/</p>
-        </div>
-        <div class="test4">
-            <p class="blanc"> File Edit View Search Terminal Help</p>
-        </div>
-    </div>
-    <div class="test1">
-
-        <div class="test2_">
-            <div class="baba">
-                <p class="vert">noa@debian</p>
-                <p class="blanc">:</p>
-                <p class="bleu">/</p>
-                <p class="blanc">$</p>
-                <p class="blanc">ls </p>
-            </div> 
-            <p class="blanc_"><strong> . projets presentation</strong></p>
-        </div>
-
-
-        <div class="test2">
-            <p class="vert">noa@debian</p>
-            <p class="blanc">:</p>
-            <p class="bleu">/</p>
-            <p class="blanc">$</p>
-            <p class="blanc"><blink>| </blink></p>
-            <input type="text" name="input" class="input" onkeypress="getValue(event);">
-        </div>
-
-        
-
-    </div>
-    
-
-    
+    <a href="./terminal.html"> <button><img height="40px" width="40px" src="./terminal.png"> </button> </a>
+    <a href="./terminal.html"> <button><img height="40px" width="40px" src="./dossier.png"> </button> </a>
+</body>
 </body>
 </html>
