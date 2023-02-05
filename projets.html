@@ -11,7 +11,7 @@
                 var input = document.getElementsByClassName("input")[0].value;
                 // Afficher la valeur
                 if (input == "cd .."){
-                    window.location.href ="index.html";
+                    window.location.href ="terminal.html";
                 }
                 else if (input == "cd ."){
                     window.location.href ="projets.html";
@@ -20,6 +20,12 @@
                 else if (input == "ls"){
                     var div = document.getElementsByClassName('test2')[0];
                     var div_bis = document.getElementsByClassName('test2_')[0];
+                    div.style.display = "flex";
+                    div_bis.style.display = "flex";
+                }
+                else if (input == "cat CV"){
+                    var div = document.getElementsByClassName('test2')[0];
+                    var div_bis = document.getElementsByClassName('cat')[0];
                     div.style.display = "flex";
                     div_bis.style.display = "flex";
                 }
@@ -50,9 +56,20 @@
                 <p class="blanc">:</p>
                 <p class="bleu">/projets</p>
                 <p class="blanc">$</p>
-                <p class="blanc">ls </p>
+                <p class="blanc">ls</p>
             </div> 
-            <p class="blanc_">.. .</p>
+            <p class="blanc_">.. . CV</p>
+        </div>
+
+        <div class="cat">
+            <div class="baba">
+                <p class="vert">noa@debian</p>
+                <p class="blanc">:</p>
+                <p class="bleu">/projets</p>
+                <p class="blanc">$</p>
+                <p class="blanc">cat<span>&nbsp;</span>CV</p>
+            </div><br>
+            <p class="blanc_">dsehfishydfusgfsdhgfjsdfsdghfghdgfdsfsdhfsdfgdsfhgdsfdshfdsfsdhfgsdhfhsdfhgdsfh dsghsgfhsdgfsdhfhsdg ghdsfghjsdgfgdsfhgsdfsdhfgd gdhfgdshfhdsgfhsdgfhgsdh gjhdsgfdshfgdh</p>
         </div>
 
         <div class="test2">

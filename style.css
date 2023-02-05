@@ -40,12 +40,11 @@ button {
 }
 
 .blanc {
-    .
     color: rgb(240,240,240)
 }
 
 .blanc_ {
-    display: block flow;
+    display: block ;
     color: rgb(240,240,240)
 }
 
@@ -69,7 +68,8 @@ button {
     margin: 0%;
 }
 
-.test4{  
+.cat{
+    display: none;  
 }
 
 .baba{
